@@ -24,6 +24,7 @@ import {
   validatorCreditCard,
   validatorPhone,
   validatorCode,
+  validCreditCode,
 } from "./validators";
 
 // ////////////////////////////////////////////////////////
@@ -84,6 +85,11 @@ export const url = extend("url", {
   message: "URL is invalid",
 });
 
+export const creditCode = extend("creditCode", {
+  validate: validCreditCode,
+  message: "社会信用代码输入错误",
+});
+
 // Install English and Arabic localizations.
 localize({
   en: {
@@ -93,6 +99,8 @@ localize({
       password: "Password",
       phone: "手机号码",
       code: "验证码",
+      creditCode: "社会信用代码",
+      agentName: "代理商名称",
     },
     fields: {
       password: {

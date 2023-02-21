@@ -94,3 +94,106 @@ export default {
   },
 }
 </script>
+<style>
+.swal2-popup {
+  background-color: #fff;
+}
+.dark-layout .swal2-popup {
+  border: 1px solid #404656;
+  background-color: #283046;
+}
+.el-input__inner .el-input.is-disabled {
+  background-color: #fff;
+}
+.dark-layout .el-input__inner {
+  border: 1px solid #404656;
+  background-color: #283046;
+}
+
+.el-picker-panel {
+  background-color: #fff;
+}
+.dark-layout .el-picker-panel {
+  background-color: #283046;
+  border: 1px solid #404656;
+}
+.el-cascader__dropdown {
+  background-color: #fff;
+}
+.dark-layout .el-cascader__dropdown {
+  background-color: #283046;
+  border: 1px solid #404656;
+}
+
+.dark-layout .el-input-number span {
+  background-color: #283046;
+  border: 1px solid #404656 !important;
+}
+.el-select-dropdown {
+  background-color: #fff;
+}
+.dark-layout .el-select-dropdown {
+  background-color: #283046;
+}
+.dark-layout .el-input.is-disabled .el-input__inner {
+  background-color: #283046;
+  border: 1px solid #404656 !important;
+}
+/* 日期选择 */
+.el-date-table td.end-date span,
+.el-date-table td.start-date span {
+  background-color: #006aeb !important;
+}
+.dark-layout .el-date-table td.end-date span,
+.dark-layout .el-date-table td.start-date span {
+  background-color: #006aeb;
+}
+.dark-layout .el-picker-panel__shortcut {
+  color: silver;
+}
+.dark-layout .el-picker-panel__icon-btn {
+  color: silver;
+}
+.dark-layout .el-date-table td {
+  color: silver;
+}
+.dark-layout .el-date-table td.next-month,
+.dark-layout .el-date-table td.prev-month {
+  color: grey;
+}
+.dark-layout .el-date-range-picker__header {
+  color: silver;
+}
+.dark-layout .el-date-table th {
+  border-bottom: solid 1px #474748;
+  color: silver;
+}
+.dark-layout .el-date-table td.in-range div,
+.dark-layout .el-date-table td.in-range div:hover {
+  background-color: #283046;
+}
+.dark-layout .el-date-editor .el-range-separator {
+  color: silver;
+}
+.dark-layout .el-date-range-picker__content.is-left {
+  border-color: #404656;
+}
+.dark-layout .has-sidebar {
+  border-color: #394057;
+}
+.dark-layout .el-picker-panel__sidebar + .el-picker-panel__body {
+  background-color: #161d31;
+}
+.dark-layout .el-picker-panel__sidebar {
+  border-color: #404656;
+  background-color: #161d31;
+}
+.dark-layout .el-range-editor.el-input__inner {
+  background-color: #283046;
+  border-color: #404656;
+}
+.dark-layout .el-date-editor .el-range-input {
+  background-color: #283046;
+  color: silver;
+}
+</style>

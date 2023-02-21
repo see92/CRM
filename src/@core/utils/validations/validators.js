@@ -46,4 +46,9 @@ export const validatorCode = (code) => {
   }
 };
 
-//
+// 社会信用代码
+export const validCreditCode = (creditCode) => {
+  if (creditCode.length === 18) {
+    return true;
+  }
+};
