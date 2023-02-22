@@ -115,6 +115,49 @@ export default [
     },
   },
   {
+    path: "/group",
+    name: "group",
+    component: () => import("@/views/pages/GROUP/index"),
+    meta: {
+      pageTitle: "分组管理",
+      basePage: true,
+      breadcrumb: [
+        {
+          text: "分组管理",
+          active: true,
+        },
+      ],
+    },
+  },
+  {
+    path: "/group/add",
+    name: "groupAdd",
+    component: () => import("@/views/pages/GROUP/groupInfo"),
+    meta: {
+      pageTitle: "新增",
+      navActiveLink: "group",
+      basePage: true,
+      breadcrumb: [
+        { text: "分组管理", to: "/group" },
+        { text: "新增", active: true },
+      ],
+    },
+  },
+  {
+    path: "group/edit",
+    name: "groupEdit",
+    component: () => import("@/views/pages/GROUP/groupInfo"),
+    meta: {
+      pageTitle: "修改",
+      navActiveLink: "group",
+      basePage: true,
+      breadcrumb: [
+        { text: "分组管理", to: "/group" },
+        { text: "修改", active: true },
+      ],
+    },
+  },
+  {
     path: "/login",
     name: "login",
     component: () => import("@/views/Login.vue"),

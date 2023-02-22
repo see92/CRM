@@ -33,10 +33,10 @@
     </div>
     <div>
       <b-modal size="sm" title="提示：" centered v-model="delModel" hide-footer>
-        <div>此操作将会删除数据，是否继续？</div>
-        <div class="d-flex">
-          <b-button variant="danger" class="mr-1">确定</b-button>
-          <b-button variant="outline-danger">取消</b-button>
+        <div class="mb-1 justify-content-center d-flex">此操作将会删除数据，是否继续？</div>
+        <div class="d-flex justify-content-end">
+          <b-button variant="danger" class="mr-1" @click="del_btn(0)">确定</b-button>
+          <b-button variant="outline-danger" @click="del_btn(1)">取消</b-button>
         </div>
       </b-modal>
     </div>
@@ -73,6 +73,13 @@ export default {
     handle_remove(id) {
       this.delModel = true
       console.log(id, 'iddddddddd');
+    },
+    del_btn(flag) {
+      if (flag == 0) {
+        this.delModel = false
+      } else {
+        this.delModel = false
+      }
     }
   },
 }

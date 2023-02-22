@@ -42,10 +42,10 @@
     </div>
     <div>
       <b-modal v-model="showModal" hide-footer size="sm" title="提示：" centered>
-        <div class="mb-1">此操作会删除数据，是否继续？</div>
+        <div class="mb-1 d-flex justify-content-center">此操作会删除数据，是否继续？</div>
         <div class="d-flex justify-content-end">
-          <b-button variant="danger" class="mr-1">确定</b-button>
-          <b-button variant="outline-danger">取消</b-button>
+          <b-button variant="danger" class="mr-1" @click="del_btn(0)">确定</b-button>
+          <b-button variant="outline-danger" @click="del_btn(0)">取消</b-button>
         </div>
       </b-modal>
     </div>
@@ -109,6 +109,13 @@ export default {
     delModal(id) {
       console.log(id, 'iddddd');
       this.showModal = true;
+    },
+    del_btn(flag) {
+      if (flag == 0) {
+        this.showModal = false
+      } else {
+        this.showModal = false
+      }
     }
   },
 }

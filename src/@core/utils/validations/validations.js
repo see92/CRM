@@ -95,12 +95,13 @@ localize({
   en: {
     messages: en.messages,
     names: {
-      email: "Email",
+      email: "邮箱",
       password: "Password",
       phone: "手机号码",
       code: "验证码",
       creditCode: "社会信用代码",
       agentName: "代理商名称",
+      name: "姓名",
     },
     fields: {
       password: {

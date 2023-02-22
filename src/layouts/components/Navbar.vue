@@ -29,13 +29,13 @@
     <b-navbar-nav class="nav align-items-center ml-auto">
       <b-nav-item-dropdown right toggle-class="d-flex align-items-center dropdown-user-link" class="dropdown-user">
         <template #button-content>
-          <div class="d-sm-flex d-none user-nav">
+          <!-- <div class="d-sm-flex d-none user-nav">
             <p class="user-name font-weight-bolder mb-0">
               John Doe
             </p>
             <span class="user-status">Admin</span>
-          </div>
-          <b-avatar size="40" variant="light-primary" badge :src="require('@/assets/images/avatars/13-small.png')" class="badge-minimal" badge-variant="success" />
+          </div> -->
+          <b-avatar size="40" variant="light-primary" badge :src="require('@/assets/images/avatars/userAvatar.jpg')" class="badge-minimal" badge-variant="success" />
         </template>
 
         <!-- <b-dropdown-item link-class="d-flex align-items-center">
@@ -58,11 +58,12 @@
           <span>Chat</span>
         </b-dropdown-item> -->
 
-        <b-dropdown-divider />
+        <!-- <b-dropdown-divider /> -->
 
-        <b-dropdown-item link-class="d-flex align-items-center" @click="logout">
+        <b-dropdown-item link-class="d-flex align-items-center justify-content-center" @click="logout">
+
           <feather-icon size="16" icon="LogOutIcon" class="mr-50" />
-          <span>Logout</span>
+          <span>退出</span>
         </b-dropdown-item>
       </b-nav-item-dropdown>
     </b-navbar-nav>

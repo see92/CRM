@@ -30,6 +30,7 @@ import "./global-components";
 // 3rd party plugins
 import "@/libs/portal-vue";
 import "@/libs/toastification";
+// import "@/libs/acl";
 
 // BSV Plugin Registration
 Vue.use(VueSweetalert2);

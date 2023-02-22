@@ -32,4 +32,9 @@ export default [
     icon: "GitlabIcon",
     route: "agent",
   },
+  {
+    title: "分组管理",
+    icon: "ListIcon",
+    route: "group",
+  },
 ];
